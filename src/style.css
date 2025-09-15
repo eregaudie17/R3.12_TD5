@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
-@theme{
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@theme inline{
     /* Primitive Tokens */
 --clr-white: oklch(1 0 0);
 
@@ -14,5 +22,8 @@
 
 --ff-SG: "Space Grotesk", sans-serif;
 
+
+
+    /* Semantic Tokens */
 --font-family-ffbase: var(--ff-SG);
-}   
+}
