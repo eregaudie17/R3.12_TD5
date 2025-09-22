@@ -1,29 +1,51 @@
-@import "tailwindcss";
-
 @font-face {
     font-family: "Space Grotesk";
     src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-  }
+}
 
-@theme inline{
-    /* Primitive Tokens */
---clr-white: oklch(1 0 0);
+@import "tailwindcss";
 
---clr-gray-300: oklch(87.2% 0.01 258.338);
---clr-gray-400: oklch(70.7% 0.022 261.325);
---clr-gray-800: oklch(27.8% 0.033 256.848);
---clr-gray-900: oklch(21% 0.034 264.665);
-
---clr-green: oklch(87.1% 0.15 154.449);
---clr-green-300: oklch(79.2% 0.209 151.711);
-
---ff-SG: "Space Grotesk", sans-serif;
-
-
+@theme inline {
+    --color-fg: var(--clr-fg);
+    --color-bg: var(--clr-bg);
 
     /* Semantic Tokens */
---font-family-ffbase: var(--ff-SG);
+    --font-family-ffbase: var(--ff-SG);
+}
+
+@layer base {
+
+
+    :root {
+        /* Primitive Tokens */
+        --clr-fg: oklch(1 0 0);
+        --clr-bg: oklch(21% 0.034 264.665);
+
+
+
+        --clr-gray-300: oklch(87.2% 0.01 258.338);
+        --clr-gray-400: oklch(70.7% 0.022 261.325);
+        --clr-gray-800: oklch(27.8% 0.033 256.848);
+        --clr-gray-900: oklch(21% 0.034 264.665);
+
+        --clr-green: oklch(87.1% 0.15 154.449);
+        --clr-green-300: oklch(79.2% 0.209 151.711);
+
+        --ff-SG: "Space Grotesk", sans-serif;
+
+    }
+
+    .green-link{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: oklch(79.2% 0.209 151.711);
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 2px;
+    }
+
 }
