@@ -11,6 +11,7 @@
 @theme inline {
     --color-fg: var(--clr-fg);
     --color-bg: var(--clr-bg);
+    --color-bg2: var(--clr-bg2);
 
     /* Semantic Tokens */
     --font-family-ffbase: var(--ff-SG);
@@ -23,6 +24,7 @@
         /* Primitive Tokens */
         --clr-fg: oklch(1 0 0);
         --clr-bg: oklch(21% 0.034 264.665);
+        --clr-bg2: oklch(27.8% 0.033 256.848);
 
 
 
